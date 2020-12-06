@@ -5,8 +5,8 @@
     
     <data>
         <variable
-            name="quiz"
-            type="br.edu.infnet.assessment.views.QuizFragment" />
+            name="quizViewModel"
+            type="br.edu.infnet.assessment.viewModels.QuizViewModel" />
     </data>
 
     <LinearLayout
@@ -40,7 +40,7 @@
 
             android:textSize="18sp"
             tools:text="Which is the Independence day of Bangladesh?"
-            android:text="@{quiz.perguntaAtual.pergunta}"/>
+            android:text="@{quizViewModel.perguntaAtual.pergunta}"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/holo_green_light"
                     tools:text="alternativaA"
-                    android:text="@{quiz.alternativas[0]}"/>
+                    android:text="@{quizViewModel.alternativas[0]}"/>
 
                 <TextView
                     android:id="@+id/alternativaB"
@@ -74,7 +74,7 @@
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/holo_green_light"
                     tools:text="alternativaB"
-                    android:text="@{quiz.alternativas[1]}"/>
+                    android:text="@{quizViewModel.alternativas[1]}"/>
 
                 <TextView
                     android:id="@+id/alternativaC"
@@ -86,7 +86,7 @@
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/holo_green_light"
                     tools:text="alternativaC"
-                    android:text="@{quiz.alternativas[2]}"/>
+                    android:text="@{quizViewModel.alternativas[2]}"/>
 
                 <TextView
                     android:id="@+id/alternativaD"
@@ -98,7 +98,7 @@
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/holo_green_light"
                     tools:text="alternativaD"
-                    android:text="@{quiz.alternativas[3]}"/>
+                    android:text="@{quizViewModel.alternativas[3]}"/>
 
             </LinearLayout>
 
