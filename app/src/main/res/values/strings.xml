@@ -2,4 +2,9 @@
     <string name="app_name">AssessmentAndroidKotlin</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pontuacaoFinal">Pontuação final:</string>
+    <string name="jogarNovamente">Lista de perguntas</string>
+    <string name="score_format">Pontuação atual: %d</string>
+    <string name="quiz">Quiz</string>
+    <string name="iniciar">Iniciar</string>
 </resources>

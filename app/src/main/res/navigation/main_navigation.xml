@@ -18,5 +18,30 @@
         android:id="@+id/quizFragment"
         android:name="br.edu.infnet.assessment.views.QuizFragment"
         android:label="fragment_quiz"
-        tools:layout="@layout/fragment_quiz" />
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_pontuacaoFragment"
+            app:destination="@id/pontuacaoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pontuacaoFragment"
+        android:name="br.edu.infnet.assessment.views.PontuacaoFragment"
+        android:label="PontuacaoFragment"
+        tools:layout="@layout/fragment_pontuacao">
+        <action
+            android:id="@+id/action_pontuacaoFragment_to_tituloFragment"
+            app:destination="@id/tituloFragment" />
+        <argument
+            android:name="pontuacao"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_pontuacaoFragment_to_listaDePerguntasRecyclerFragment"
+            app:destination="@id/listaDePerguntasRecyclerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaDePerguntasRecyclerFragment"
+        android:name="br.edu.infnet.assessment.views.ListaDePerguntasRecyclerFragment"
+        android:label="fragment_lista_de_perguntas_recycler"
+        tools:layout="@layout/fragment_lista_de_perguntas_recycler" />
 </navigation>
